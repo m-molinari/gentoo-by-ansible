@@ -1,0 +1,12 @@
+---
+- hosts: localhost
+  connection: local
+  become: yes
+  roles:
+    - iptables
+    - services
+    - portage
+    - rsyslog
+    - cinnamon
+    - astronomy
+    - i3wm

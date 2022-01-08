@@ -1,0 +1,46 @@
+---
+- name: Install packages
+  portage: name={{ item }} state=present
+  with_items:
+    - ['{{ i3wm }}']
+
+- name: Create xinitrc file
+  copy:
+    src: files/xinitrc
+    dest: "{{ user.home }}/.xinitrc"
+    owner: "{{ user.name }}"
+    group: "{{ user.name }}"
+    mode: '0644'
+
+- name: Check intel_backlight in sys class
+  shell:
+    cmd: ls -l  /sys/class/backlight/intel_backlight/brightness | wc -l
+  register: grep_intel_backlight
+  ignore_errors: true
+  changed_when: false
+  failed_when: grep_intel_backlight.rc not in [ 0, 1 ]
+
+- name: adding udev rule for backlight increase and decrease brightness
+  copy:
+    src: files/backlight.rules
+    dest: /etc/udev/rules.d/backlight.rules
+    owner: root
+    group: root
+    mode: '0644'
+  when: grep_intel_backlight.stdout == '1'
+
+- name: Creates directory xorg.conf.d in /etc/X11/
+  file:
+    path: /etc/X11/xorg.conf.d
+    state: directory
+    owner: root
+    group: root
+    mode: 0755
+
+- name: Copy 90-touchpad.conf in /etc/X11/xorg.conf.d/
+  copy:
+    src: files/90-touchpad.conf
+    dest: /etc/X11/xorg.conf.d
+    owner: root
+    group: root
+    mode: '0644'

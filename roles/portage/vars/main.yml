@@ -1,0 +1,42 @@
+---
+drivers:
+    - net-print/hplip
+lib:
+    - media-libs/libdvdread
+    - media-libs/libdvdcss
+    - media-libs/libdvdnav
+    - dev-python/configobj
+editor:
+    - app-editors/vim
+file_system:
+    - net-fs/cifs-utils
+    - sys-fs/mtpfs
+    - gnome-base/gvfs
+    - net-fs/nfs-utils
+    - sys-fs/ntfs3g
+    - net-fs/samba
+bash:
+    - app-shells/bash-completion
+    - app-misc/neofetch
+    - app-text/tree
+sys:
+    - net-dns/bind-tools
+    - net-misc/curl
+    - dev-util/dialog
+    - app-containers/docker
+    - dev-vcs/git
+    - net-misc/keychain
+    - sys-process/htop
+    - net-misc/iputils
+    - sys-process/lsof
+    - sys-apps/man-db
+    - sys-apps/mlocate
+    - sys-fs/ncdu
+    - net-tools
+    - net-misc/openssh
+    - net-misc/rsync
+    - sys-apps/smartmontools
+    - net-analyzer/tcpdump
+    - x11-terms/terminator
+    - sys-apps/usbutils
+    - net-misc/whois

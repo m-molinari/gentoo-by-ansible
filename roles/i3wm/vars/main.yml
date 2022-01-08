@@ -1,0 +1,58 @@
+---
+i3wm:
+    # volume control
+    - alsa-utils
+    # screen manage
+    - arandr
+    # application menu
+    - dmenu
+    # notify
+    - dunst
+    # wallpaper
+    - feh
+    # i3wm
+    - i3-wm
+    - i3status
+    - i3blocks
+    # wallpaper
+    - mate-backgrounds
+    # screenshots
+    - maim
+    - xclip
+    # wallpaper manager
+    - nitrogen
+    # network connection manager
+    - nm-connection-editor
+    # themes and aspect
+    - lxappearance
+    # file manager
+    - nemo
+    # compositor
+    - picom
+    # audio manager
+    - playerctl
+    # polkit root gui app
+    - polkit-gnome
+    # terminal file manager
+    - ranger
+    - rofi
+    # fonts
+    - ttf-font-awesome
+    - ttf-droid
+    # control volume by gui
+    - volumeicon
+    - xterm
+    - rxvt-unicode
+    # autolock
+    - xautolock
+    # battery level
+    - xfce4-power-manager
+    # brightness manage
+    - acpilight
+ #   - xorg-xbacklight
+
+i3wm_yay:
+    # lock screen
+    - i3lock-color
+    - i3-scrot
+    - lightdm-settings

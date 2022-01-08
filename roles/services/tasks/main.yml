@@ -1,0 +1,42 @@
+---
+- name: NetworkManager service enable
+  become: yes
+  become_user: root
+  become_method: sudo
+
+  systemd:
+    name: NetworkManager
+    state: started
+    enabled: yes
+
+  systemd:
+    name: cups-browsed.service
+    state: started
+    enabled: yes
+
+  systemd:
+    name: lightdm
+    state: started
+    enabled: yes
+
+  systemd:
+    name: polkit
+    state: started
+    enabled: yes
+
+  systemd:
+    name: dhcpcd
+    state: started
+    enabled: yes
+
+  systemd:
+    name: dbus
+    state: started
+    enabled: yes
+
+  systemd:
+    name: systemd-udevd
+    state: started
+    enabled: yes
+
+

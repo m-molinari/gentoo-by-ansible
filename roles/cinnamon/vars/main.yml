@@ -1,0 +1,43 @@
+---
+display_manager:
+    - x11-misc/lightdm
+    - x11-misc/lightdm-gtk-greeter
+cinnamon:
+    - gnome-extra/cinnamon
+    - gnome-extra/nemo
+    - gnome-extra/nemo-fileroller
+applications:
+    - sys-apps/baobab
+    - app-cdr/brasero
+#    - net-wireless/bluez
+#    - net-wireless/blueman
+    - app-text/cherrytree
+    - net-print/cups
+    - net-print/cups-filters
+#    - deja-dup
+    - app-text/evince
+    - gnome-extra/gnome-calculator
+    - gnome-disk-utility
+    - media-gfx/gnome-screenshot
+    - gnome-base/gnome-keyring
+    - sys-block/gparted
+    - sys-apps/gsmartcontrol
+    - libreoffice-bin
+    - media-gfx/simple-scan
+    - app-admin/system-config-printer
+    - app-admin/keepassxc
+    - app-editors/gedit
+    - dev-util/meld
+    - media-video/mplayer
+    - app-crypt/seahorse
+clients:
+    - www-client/firefox-bin
+    - net-ftp/filezilla
+    - mail-client/thunderbird-bin
+    - net-p2p/transmission
+graphics:
+    - media-gfx/eog
+    - media-gfx/gimp
+video:
+    - media-video/vlc
+    - media-video/totem
