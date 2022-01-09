@@ -31,6 +31,8 @@ sys:
     - sys-process/lsof
     - sys-apps/man-db
     - sys-apps/mlocate
+    - app-admin/rsyslog
+    - app-admin/logrotate
     - sys-fs/ncdu
     - net-tools
     - net-misc/openssh
