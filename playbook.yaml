@@ -5,6 +5,7 @@
   roles:
     - iptables
     - services
+    - use_flags
     - portage
     - rsyslog
     - cinnamon

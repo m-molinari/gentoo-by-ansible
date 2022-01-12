@@ -1,0 +1,9 @@
+---
+- name: Copy USE folder for USE flags explicit packages
+  copy:
+    src: files/
+    dest: /etc/portage/package.use/
+    owner: root
+    group: root
+    mode: '0644'
+
